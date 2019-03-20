@@ -145,6 +145,54 @@ function snackbar(message, timeout) {
 
     }
 }
+
+function toast (message, type, timeout) {
+
+    consoleD("");
+
+    // Show a toast (type: success, error, warning, info and question)
+    try {
+        
+        if (Swal) {
+
+            if (!timeout) timeout = 3000;
+        
+            Swal.fire({
+                toast: true,
+                html: '<span style=\"color:#FFF\">' + message + '</span>',
+                background: '#333',
+                type: (type)?type:'info',
+                position: 'bottom',
+                showConfirmButton: false,
+                timer: timeout
+              });
+      
+              
+        } else {
+            snackbar (message, timeout);
+        }
+
+    } catch (error) {
+        console.error ("Error -> " + error);        
+    }
+}
+
+function toastHide() {
+
+    // Hide a toast
+
+    try {
+        if (Swal) {
+            Swal.close();
+        } else {
+            snackbarHide();
+        }
+    } catch (error) {
+        console.error ("Error -> " + error);
+    }
+
+}
+
 ///// Extensions
 
 String.prototype.replaceAllRegExp = function(search, replacement) {
@@ -157,3 +205,5 @@ String.prototype.replaceAll = function(search, replacement) {
     var target = this;
 	return target.split(search).join(replacement);
 };
+
+/// End

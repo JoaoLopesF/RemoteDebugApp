@@ -67,6 +67,7 @@ When have a new version, this web app is warning you.
 
     - Adjustments for a local copy version
     - And on version check
+    - Added "Conv" button to access github RemoteDebugConverter
 
 ### 0.3.1 - 2019-03-18  
 

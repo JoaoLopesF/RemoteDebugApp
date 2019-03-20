@@ -481,4 +481,34 @@
     background-repeat: no-repeat;
 }
 
+#btn_converter {
+    color: #ccc;
+    cursor:pointer;
+    padding: 4px 4px 4px 24px;
+    background: url(images/converter.png);
+    background-size: 16px 16px;
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+}
+
+#btn_converter:hover {
+    color: #000;
+    cursor:pointer;
+    padding: 4px 4px 4px 24px;
+    background: #F8F8FF url(images/converter_b.png);
+    background-size: 16px 16px;
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+}
+#btn_converter:disabled {
+    color: var(--disabled-color);
+    cursor:default;
+    padding: 4px 4px 4px 24px;
+    background: url(images/converter.png);
+    background-size: 16px 16px;
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+}
+
 /* end */
