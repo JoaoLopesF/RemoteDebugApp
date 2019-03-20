@@ -2,7 +2,7 @@
 
 This is local copy of RemoteDebugApp to use if internet is offline.  
 
-![versiom](https://img.shields.io/badge/version-v0.3.1-blue.svg?style=flat)
+![versiom](https://img.shields.io/badge/version-v0.3.2-blue.svg?style=flat)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/JoaoLopesF/RemoteDebug/blob/master/LICENSE.txt)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](#github)
 
@@ -62,6 +62,11 @@ When have a new version, this web app is warning you.
 ![webapp](https://raw.githubusercontent.com/JoaoLopesF/RemoteDebug/master/extras/readme_media/remotedebug_webapp.png)
 
 ## Releases
+
+### 0.3.2 - 2019-03-20
+
+    - Adjustments for a local copy version
+    - And on version check
 
 ### 0.3.1 - 2019-03-18  
 

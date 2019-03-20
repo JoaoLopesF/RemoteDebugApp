@@ -75,7 +75,7 @@ body {
 #header_info {
     float: center;
     margin-left: auto;
-    font-size: .75em;
+    font-size: .80em;
     display: grid;
     visibility: none; 
     align-items: baseline;

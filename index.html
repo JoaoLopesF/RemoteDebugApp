@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- 
 *
@@ -6,6 +7,8 @@
 * Notes   : 
 * Versions:
 *
+* 0.3.2     2019-03-20  Adjustments for a local copy version
+*                       And on version check
 * 0.3.1     2019-03-18  Using ajax to get version of app (to check if needs reload) 
 *                       Prepare to use local (saved in disk)
 *                       Another adjustments
@@ -40,20 +43,20 @@
         <meta name="msapplication-TileColor" content="#FFFFFF">
         <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"> -->
         <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
-        <title>RemoteDebugApp 0.3.1: web app to debug Arduino with RemoteDebug library.</title>
+        <title>RemoteDebugApp 0.3.2: web app to debug Arduino with RemoteDebug library.</title>
         <!-- Materialize core CSS -->
-        <link href="materialize/css/materialize.min.css?mtime=1552159945" rel="stylesheet">
+        <link href="materialize/css/materialize.min.css?mtime=1552259126" rel="stylesheet">
         <!-- Project style -->
-        <link href="assets/css/util.css?mtime=1552679752" rel="stylesheet">
-        <link href="app-colors.css?mtime=1552679741" rel="stylesheet">
-        <link href="app-core.css?mtime=1552751584" rel="stylesheet">
-        <link href="app-buttons.css?mtime=1552679740" rel="stylesheet">
-        <link href="app-console.css?mtime=1553036738" rel="stylesheet">
-        <link href="app-web.css?mtime=1552751584" rel="stylesheet">
-        <link href="app-mobile.css?mtime=1552751584" rel="stylesheet">
+        <link href="assets/css/util.css?mtime=1552605852" rel="stylesheet">
+        <link href="app-colors.css?mtime=1552593952" rel="stylesheet">
+        <link href="app-core.css?mtime=1552750957" rel="stylesheet">
+        <link href="app-buttons.css?mtime=1552663882" rel="stylesheet">
+        <link href="app-console.css?mtime=1553036132" rel="stylesheet">
+        <link href="app-web.css?mtime=1553099135" rel="stylesheet">
+        <link href="app-mobile.css?mtime=1552751039" rel="stylesheet">
         <!-- Check browser and app - need stay in head -->
-        <script src="assets/js/ua-parser.min.js?mtime=1553022087"></script>
-        <script src="app-check.js?mtime=1553038250"></script>
+        <script src="assets/js/ua-parser.min.js?mtime=1552915166"></script>
+        <script src="app-check.js?mtime=1553037957"></script>
     
     <!-- Body -->
     <body>
@@ -79,7 +82,7 @@
                         <img id="img_refreshmem" src="images/refresh.png" onmouseover="this.src='images/refresh_b.png';" onmouseout="this.src='images/refresh.png';"/> 
                     </div>
                     <div id="header_info_version">
-                        RemoteDebug lib.: 
+                        RemoteDebug: 
                         <b><span id="span_info_version">...</span></b>&nbsp; 
                     </div>
                     <div id="header_info_features">
@@ -151,18 +154,18 @@
                 <div id="snackbar_message"><span id="span_snackbar_message">...</span></div>
             </div>
             <!-- Version, to be read in JS -->
-            <span id="span_version" style="display:none">0.3.1</span>
+            <span id="span_version" style="display:none">0.3.2</span>
         </div>
         <!-- JavaScript -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="assets/js/jquery.min.js?mtime=1553022087"></script>
-        <script src="materialize/js/materialize.min.js?mtime=1552159946"></script>
-        <script src="assets/js/mousetrap.min.js?mtime=1552679752"></script>
-        <script src="assets/js/sweetalert2.min.js?mtime=1553022086"></script>
+        <script src="assets/js/jquery.min.js?mtime=1552753681"></script>
+        <script src="materialize/js/materialize.min.js?mtime=1552259126"></script>
+        <script src="assets/js/mousetrap.min.js?mtime=1552419407"></script>
+        <script src="assets/js/sweetalert2.min.js?mtime=1552944948"></script>
         <!-- Main JavaScript  -->
-        <script src="assets/js/console.js?mtime=1552679750"></script>
-        <script src="assets/js/util.js?mtime=1553022084"></script>
-        <script src="app.js?mtime=1553036740"></script>
+        <script src="assets/js/console.js?mtime=1552593666"></script>
+        <script src="assets/js/util.js?mtime=1552923502"></script>
+        <script src="app.js?mtime=1553098332"></script>
     </body>
 </html>
 <!-- End -->
